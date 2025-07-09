@@ -1,6 +1,6 @@
 # Sistema Gerenciador de Tarefas
 
-Um projeto completo de gerenciamento de tarefas desenvolvido para demonstração técnica em entrevistas de emprego, utilizando as tecnologias Java Spring Boot, SQL Server/Azure e Angular.
+Um projeto completo de gerenciamento de tarefas desenvolvido para demonstração técnica, utilizando as tecnologias Java Spring Boot, SQL Server/Azure e Angular.
 
 ## 📋 Visão Geral
 
@@ -9,7 +9,7 @@ Este sistema permite que usuários gerenciem suas tarefas diárias, organizando-
 ## 🛠️ Tecnologias Utilizadas
 
 ### Backend
-- **Java 17** - Linguagem de programação
+- **Java 24** - Linguagem de programação
 - **Spring Boot 3.2** - Framework principal
 - **Spring Security** - Autenticação e autorização
 - **Spring Data JPA** - Persistência de dados
@@ -155,7 +155,6 @@ az webapp deploy --resource-group your-rg --name your-app --src-path target/app.
 ## 📚 Documentação
 
 - **[Relatório de Implementação](relatorio-implementacao.md)** - Guia detalhado de como implementar o projeto
-- **[Relatório Técnico para Entrevista](relatorio-tecnico-entrevista.md)** - Explicações técnicas e perguntas/respostas para entrevistas
 - **[Backend README](backend/README.md)** - Documentação específica do backend
 - **[Frontend README](frontend/README.md)** - Documentação específica do frontend
 
@@ -207,31 +206,6 @@ Endpoints de monitoramento:
 - Validação de entrada em todas as APIs
 - Headers de segurança HTTP
 - Isolamento de dados por usuário
-
-## 🤝 Contribuição
-
-Este projeto foi desenvolvido para fins de demonstração técnica. Para contribuir:
-
-1. Fork o projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👨‍💻 Autor
-
-Desenvolvido como projeto de demonstração técnica para entrevistas de emprego.
-
-## 📞 Suporte
-
-Para dúvidas sobre implementação ou conceitos técnicos, consulte:
-- [Relatório de Implementação](relatorio-implementacao.md)
-- [Relatório Técnico](relatorio-tecnico-entrevista.md)
-- Documentação específica de cada módulo
 
 ---
 
