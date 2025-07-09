@@ -1,12 +1,8 @@
 # Relatório de Implementação - Sistema Gerenciador de Tarefas
 
-**Autor:** Manus AI  
-**Data:** Janeiro 2025  
-**Versão:** 1.0  
-
 ## Sumário Executivo
 
-Este relatório documenta a implementação completa de um sistema de gerenciamento de tarefas desenvolvido com tecnologias modernas para demonstração em entrevista de emprego. O projeto foi construído seguindo as melhores práticas de desenvolvimento, utilizando Java Spring Boot para o backend, Angular para o frontend, e SQL Server com Azure para persistência de dados.
+Este relatório documenta a implementação completa de um sistema de gerenciamento de tarefas desenvolvido com tecnologias modernas. O projeto foi construído seguindo as melhores práticas de desenvolvimento, utilizando Java Spring Boot para o backend, Angular para o frontend, e SQL Server com Azure para persistência de dados.
 
 O sistema implementa funcionalidades completas de CRUD (Create, Read, Update, Delete) para usuários e tarefas, incluindo autenticação JWT, filtros avançados, e uma interface responsiva e moderna. A arquitetura foi projetada para ser escalável, mantível e seguir os padrões da indústria.
 
@@ -19,7 +15,7 @@ O sistema implementa funcionalidades completas de CRUD (Create, Read, Update, De
 
 O backend foi desenvolvido utilizando o ecossistema Spring Boot, que oferece uma base robusta e produtiva para desenvolvimento de aplicações Java empresariais. A escolha do Spring Boot se justifica pela sua maturidade, ampla adoção no mercado, e pelo conjunto abrangente de funcionalidades que oferece.
 
-**Spring Boot 3.2.0** foi selecionado como framework principal, trazendo suporte nativo ao Java 17 e incluindo melhorias significativas em performance e segurança. Esta versão incorpora o Spring Framework 6.x, que oferece suporte aprimorado para programação reativa e melhor integração com tecnologias de containerização.
+**Spring Boot 3.2.0** foi selecionado como framework principal, trazendo suporte nativo ao Java 24 e incluindo melhorias significativas em performance e segurança. Esta versão incorpora o Spring Framework 6.x, que oferece suporte aprimorado para programação reativa e melhor integração com tecnologias de containerização.
 
 **Spring Security** foi implementado para gerenciar autenticação e autorização, utilizando tokens JWT (JSON Web Tokens) para manter o estado de sessão de forma stateless. Esta abordagem é particularmente adequada para aplicações modernas que precisam escalar horizontalmente e integrar com diferentes tipos de clientes.
 
@@ -490,5 +486,4 @@ Padrões de arquitetura como microservices, event sourcing e CQRS são tópicos 
 
 ---
 
-**Nota:** Este relatório documenta a implementação completa do sistema de gerenciamento de tarefas desenvolvido para demonstração técnica. Todas as decisões arquiteturais e implementações foram baseadas em boas práticas da indústria e requisitos específicos do projeto.
 
