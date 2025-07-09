@@ -1,0 +1,87 @@
+<div class="task-list-container">
+  <div *ngIf="tasks.length === 0" class="empty-state">
+    <div class="empty-icon">📝</div>
+    <h3>Nenhuma tarefa encontrada</h3>
+    <p>Crie sua primeira tarefa para começar a organizar seu dia!</p>
+  </div>
+
+  <div *ngIf="tasks.length > 0" class="tasks-grid">
+    <div 
+      *ngFor="let task of sortedTasks()" 
+      class="task-card"
+      [class.completed]="task.completed"
+      [class.overdue]="isOverdue(task)"
+      [class.today]="isToday(task)">
+      
+      <!-- Task Header -->
+      <div class="task-header">
+        <div class="task-checkbox">
+          <input 
+            type="checkbox" 
+            [checked]="task.completed"
+            (change)="onToggleTask(task)"
+            [id]="'task-' + task.id">
+          <label [for]="'task-' + task.id"></label>
+        </div>
+        
+        <div class="task-actions">
+          <button 
+            class="btn-icon edit" 
+            (click)="onEditTask(task)"
+            title="Editar tarefa">
+            ✏️
+          </button>
+          <button 
+            class="btn-icon delete" 
+            (click)="onDeleteTask(task.id!)"
+            title="Excluir tarefa">
+            🗑️
+          </button>
+        </div>
+      </div>
+
+      <!-- Task Content -->
+      <div class="task-content">
+        <h3 class="task-title" [class.completed-text]="task.completed">
+          {{ task.title }}
+        </h3>
+        
+        <p *ngIf="task.description" class="task-description" [class.completed-text]="task.completed">
+          {{ task.description }}
+        </p>
+        
+        <div class="task-meta">
+          <div class="task-date">
+            <span class="meta-icon">📅</span>
+            <span [class.overdue-text]="isOverdue(task)">
+              {{ formatDate(task.taskDate) }}
+            </span>
+            <span *ngIf="isToday(task)" class="today-badge">Hoje</span>
+            <span *ngIf="isOverdue(task)" class="overdue-badge">Atrasada</span>
+          </div>
+          
+          <div class="task-tags">
+            <span 
+              class="priority-tag" 
+              [style.background-color]="getPriorityColor(task.priority)">
+              {{ getPriorityLabel(task.priority) }}
+            </span>
+            <span 
+              class="category-tag"
+              [style.background-color]="getCategoryColor(task.category)">
+              {{ getCategoryLabel(task.category) }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Completion Info -->
+      <div *ngIf="task.completed && task.completedAt" class="completion-info">
+        <span class="completion-text">
+          ✅ Concluída em {{ formatDate(task.completedAt) }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
