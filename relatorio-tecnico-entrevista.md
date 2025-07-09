@@ -1,13 +1,6 @@
 # Relatório Técnico para Entrevista - Sistema Gerenciador de Tarefas
 
-**Autor:** Manus AI  
-**Data:** Janeiro 2025  
-**Versão:** 1.0  
-**Objetivo:** Preparação técnica para entrevistas de emprego
-
 ## Sumário Executivo
-
-Este relatório técnico foi desenvolvido especificamente para preparação de entrevistas de emprego, fornecendo explicações detalhadas sobre conceitos, tecnologias e implementações utilizadas no projeto de gerenciamento de tarefas. O documento aborda tanto aspectos teóricos quanto práticos, oferecendo respostas estruturadas para perguntas técnicas comuns em entrevistas para posições de desenvolvimento Java/Angular.
 
 O conteúdo está organizado por tecnologia e conceito, permitindo estudo direcionado baseado no foco da entrevista. Cada seção inclui explicações conceituais, justificativas para decisões técnicas, e exemplos práticos de implementação que demonstram proficiência técnica e compreensão de boas práticas da indústria.
 
